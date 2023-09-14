@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="threewords">
+        
+    </div>
+    <script>
+    var sentence="Life is beautiful, but not always. It has lots of problems you have to face everyday. Don't worry though! All these problems make you strong, it gives you courage to stand alone in future. Life is full of moments of joy, pleasure, success and comfort punctuated by misery, defeat, failures and problems.";
+        var words=sentence.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?']/g, "").toLowerCase().split(" ").reduce((accumulator,currval)=>{
+        if(accumulator[currval])
+        accumulator[currval]++
+
+        else
+            accumulator[currval]=1;
+        return accumulator;
+
+        },{});
+
+        var wordArray = Object.entries(words);//this will store object key and value pair in array eg:[in,1]
+        
+        
+        wordArray.sort(function (a, b) {//this will sort the array in descending order;
+            return b[1] - a[1];
+        });
+        // console.log(words)
+        var sliceelement=wordArray.slice(0,3)
+
+        var mostusedwords=[];
+
+        for(i=0;i<3;i++){
+            mostusedwords.push(sliceelement[i][0]);
+             
+            // console.log(sliceelement[i][0]);
+        }
+        
+       var topthree= document.getElementById("threewords")
+
+       topthree.innerHTML="<h1>" + "The most commonly used words are:"+ "<h1>"+ "<h3>"+ "'" + mostusedwords+"'"+"<h3>";
+
+       topthree.style.color="blue";
+        
+       topthree.style.textAlign="center";
+
+       topthree.style.backgroundColor="pink";
+
+       topthree.style.padding="20px"
+
+       topthree.style.border="2px solid violet"
+
+       topthree.style.fontSize="2em";
+
+       topthree.style.left="200px";
+
+       topthree.style.top="200px";
+
+       topthree.style.position="absolute";
+
+       topthree.style.display="inline-block"
+       
+       console.log(sliceelement);
+       
+       </script>
+</body>
+</html>
