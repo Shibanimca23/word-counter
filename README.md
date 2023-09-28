@@ -3,6 +3,7 @@ This project prints the first three common used words that appears in the given 
 
 ## steps to run 
 step-1: clone the repository or download HTML file  in your local computer.
+
 step-2: run the index.html file in your browser.
 
 ## Future enhancement
