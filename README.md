@@ -1,10 +1,15 @@
-# word-counter
-This project prints the first three common used words that appears in the given text.
+# WORD COUNT
 
-## steps to run 
-step-1: clone the repository or download HTML file  in your local computer.
+Description:
 
-step-2: run the index.html file in your browser.
+This HTML document displays the top 3 most frequently occurring words from a provided paragraph after removing punctuation and converting all text to lowercase.
 
-## Future enhancement
-This project can be further enhanced by adding spell checker and improves or alter some additional  resources.
+How to run the code:
+
+step1:Save the HTML file with .html extension.
+
+step2:Click the "Go Live" button.A new browser window will open, displaying top 3 words.
+
+## Future Enhancements:
+
+Implementing user interactivity to allow dynamic paragraph input. Adding the ability to customize the number of top words displayed.
