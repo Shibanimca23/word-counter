@@ -4,7 +4,7 @@ Description:
 
 This HTML document displays the top 3 most frequently occurring words from a provided paragraph after removing punctuation and converting all text to lowercase.
 
-###### How to run the code:
+##### How to run the code:
 
 step1:Save the HTML file with .html extension.
 
